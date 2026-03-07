@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.screennote.components
+package com.colornote.tela.screennote.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column

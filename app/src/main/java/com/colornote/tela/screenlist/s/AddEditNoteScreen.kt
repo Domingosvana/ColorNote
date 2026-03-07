@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.screenlist.s
+package com.colornote.tela.screenlist.s
 
 import TransparentHintTextField
 import android.annotation.SuppressLint
@@ -27,7 +27,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.colornote.data.NoteDatabaseProvider
 import com.colornote.data.NoteRepositoryImpl
 import com.colornote.feature_note.util.UiEvent
-import com.colornote.tela.theme.tela.screennote.ColorNoteTopBar
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.AnimationVector4D
 import androidx.compose.animation.core.tween
@@ -35,6 +34,7 @@ import androidx.compose.material.icons.filled.Create
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import com.colornote.feature_note.model.Note.Companion.noteColorInts
+import com.colornote.tela.screennote.ColorNoteTopBar
 import kotlinx.coroutines.launch
 
 @Composable
@@ -118,8 +118,16 @@ fun ContentNoteScreen(
 
         topBar = { ColorNoteTopBar() },
         floatingActionButton = {
-            Row {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth(),
+                    //.padding(16.dp),
+                horizontalArrangement = Arrangement.SpaceBetween
+
+            ) {
                 FloatingActionButton(
+                    modifier = Modifier.padding(start = 35.dp),
+
                     onClick = { mostrar = true },
                     containerColor = buttonColor,
                     contentColor = Color.Green,
@@ -128,7 +136,7 @@ fun ContentNoteScreen(
                     Icon(imageVector =if(mostrar)  Icons.Default.Check else Icons.Default.Create,
                         contentDescription = if (mostrar) "Fechar paleta" else "Abrir paleta")
                 }
-                Spacer(Modifier.width(233.dp))
+               // Spacer(Modifier.width(23.dp))
                 FloatingActionButton(
                     onClick = {
                         mostrar
@@ -189,6 +197,7 @@ fun ContentNoteScreen(
                 ) {
                     Column(
                         modifier = Modifier.padding(16.dp)
+                            .fillMaxWidth()
                     ) {
                         noteColorInts.chunkedRows(6).forEach { rowColors ->
                             Row(

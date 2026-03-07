@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.tela.theme
+package com.colornote.tela.tela.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

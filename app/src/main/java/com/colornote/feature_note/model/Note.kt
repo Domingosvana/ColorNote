@@ -2,21 +2,18 @@ package com.colornote.feature_note.model
 
 
 import androidx.compose.ui.graphics.Color
-import com.colornote.tela.theme.tela.tela.theme.Amarelo
-import com.colornote.tela.theme.tela.tela.theme.BabyBlue
-import com.colornote.tela.theme.tela.tela.theme.Blue
-import com.colornote.tela.theme.tela.tela.theme.Branco
-import com.colornote.tela.theme.tela.tela.theme.Cinzaclaro
-import com.colornote.tela.theme.tela.tela.theme.Cinzaescuro
-import com.colornote.tela.theme.tela.tela.theme.Fundo
-import com.colornote.tela.theme.tela.tela.theme.Green
-import com.colornote.tela.theme.tela.tela.theme.Laranja
-import com.colornote.tela.theme.tela.tela.theme.LightGreen
-import com.colornote.tela.theme.tela.tela.theme.Orange
-import com.colornote.tela.theme.tela.tela.theme.Red
-import com.colornote.tela.theme.tela.tela.theme.RedOrange
-import com.colornote.tela.theme.tela.tela.theme.RedPink
-import com.colornote.tela.theme.tela.tela.theme.Violet
+import com.colornote.tela.tela.theme.Amarelo
+import com.colornote.tela.tela.theme.BabyBlue
+import com.colornote.tela.tela.theme.Blue
+import com.colornote.tela.tela.theme.Branco
+import com.colornote.tela.tela.theme.Green
+import com.colornote.tela.tela.theme.Laranja
+import com.colornote.tela.tela.theme.LightGreen
+import com.colornote.tela.tela.theme.Orange
+import com.colornote.tela.tela.theme.Red
+import com.colornote.tela.tela.theme.RedOrange
+import com.colornote.tela.tela.theme.RedPink
+import com.colornote.tela.tela.theme.Violet
 
 data class Note(
     val id: Long,

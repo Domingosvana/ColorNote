@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.screennote
+package com.colornote.tela.screennote
 
 // Importações necessárias
 import androidx.compose.runtime.State

@@ -10,7 +10,8 @@ import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
-import com.colornote.tela.theme.tela.tela.theme.ColorNoteTheme
+import com.colornote.tela.tela.theme.ColorNoteTheme
+
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable

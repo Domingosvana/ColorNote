@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.inicial
+package com.colornote.tela.inicial
 // Pacote onde está a tela inicial (Splash)
 
 import android.annotation.SuppressLint
@@ -20,7 +20,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.colornote.R
-import com.colornote.tela.theme.tela.tela.theme.ColorNoteTheme
+import com.colornote.tela.tela.theme.ColorNoteTheme
+
 import com.colornote.tela.theme.navegacao.ListRoute
 import com.colornote.tela.theme.navegacao.SplashRoute
 // import com.colornote.tela.theme.tela.screennote.screenListContent

@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.tela.theme
+package com.colornote.tela.tela.theme
 
 import androidx.compose.ui.graphics.Color
 

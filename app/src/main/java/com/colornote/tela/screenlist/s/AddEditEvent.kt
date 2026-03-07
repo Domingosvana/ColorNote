@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.screenlist.s
+package com.colornote.tela.screenlist.s
 
 import androidx.compose.ui.focus.FocusState
 

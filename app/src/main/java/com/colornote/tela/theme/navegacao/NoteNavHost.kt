@@ -8,10 +8,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import com.colornote.feature_note.model.note1
+import com.colornote.tela.inicial.ScreenInicial
+import com.colornote.tela.screenlist.s.AddEditNoteScreen
+import com.colornote.tela.screennote.ScreenList
 
-import com.colornote.tela.theme.tela.inicial.ScreenInicial
-import com.colornote.tela.theme.tela.screenlist.s.AddEditNoteScreen
-import com.colornote.tela.theme.tela.screennote.ScreenList
 import kotlinx.serialization.Serializable
 
 //import com.colornote.tela.theme.tela.screennote.ScreenListContent

@@ -9,10 +9,10 @@ import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.remember // Importar remember
 import androidx.compose.ui.graphics.Color // Importar Color
 import com.colornote.tela.theme.navegacao.NoteNavHost
-import com.colornote.tela.theme.tela.tela.theme.ColorNoteTheme
+import com.colornote.tela.tela.theme.ColorNoteTheme
 // import com.colornote.tela.theme.navegacao.NoteNavHost // Comente se estiver testando ContentNoteScreen
-import com.colornote.tela.theme.tela.screenlist.s.ContentNoteScreen
-import com.colornote.tela.theme.tela.screenlist.s.NoteTextFieldState
+import com.colornote.tela.screenlist.s.ContentNoteScreen
+import com.colornote.tela.screenlist.s.NoteTextFieldState
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

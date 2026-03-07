@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.screennote.components
+package com.colornote.tela.screennote.components
 
 import android.app.AlertDialog
 import androidx.compose.animation.animateContentSize
@@ -54,7 +54,8 @@ import androidx.core.graphics.ColorUtils
 import com.colornote.feature_note.model.Note
 import com.colornote.feature_note.model.note1
 import com.colornote.feature_note.model.note2
-import com.colornote.tela.theme.tela.tela.theme.ColorNoteTheme
+import com.colornote.tela.tela.theme.ColorNoteTheme
+
 
 /**
  * Composable que desenha um item de nota (card customizado).

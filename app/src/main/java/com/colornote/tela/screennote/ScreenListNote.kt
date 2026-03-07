@@ -1,4 +1,4 @@
-package com.colornote.tela.theme.tela.screennote
+package com.colornote.tela.screennote
 
 import android.annotation.SuppressLint
 import android.os.Build
@@ -14,9 +14,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.selection.TextSelectionColors
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Menu
@@ -39,27 +37,21 @@ import com.colornote.feature_note.util.GetNotes
 import com.colornote.feature_note.util.NoteOrder
 import com.colornote.feature_note.util.UiEvent
 import com.colornote.tela.theme.navegacao.AddEditNoteRoute
-import com.colornote.tela.theme.tela.tela.theme.ColorNoteTheme
-import com.colornote.tela.theme.tela.tela.theme.Pink40
-import com.colornote.tela.theme.tela.screennote.components.ItemNote
-import com.colornote.tela.theme.tela.screennote.components.OrderSection
-import com.colornote.tela.theme.tela.tela.theme.Pink45
-import com.colornote.tela.theme.tela.tela.theme.RedOrange
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
-
-
-
-
+import com.colornote.tela.screennote.components.ItemNote
+import com.colornote.tela.screennote.components.OrderSection
+import com.colornote.tela.tela.theme.ColorNoteTheme
+import com.colornote.tela.tela.theme.Pink40
+import com.colornote.tela.theme.tela.screennote.SearchViewModel
 
 
 // ---- Tela principal de lista de notas ----
@@ -168,15 +160,15 @@ fun screenListContent(
         topBar = { ColorNoteTopBar() }, // TopBar fixa
         modifier = Modifier.background(Pink40),
         floatingActionButton = {
-            Box(modifier = Modifier.fillMaxSize()) {
+            Box(modifier = Modifier.fillMaxSize().fillMaxWidth()) {
                 FloatingActionButton(
-                    modifier = Modifier.align(Alignment.BottomCenter),
+                    modifier = Modifier.align(Alignment.BottomEnd),
                     onClick = onAddItemclick, // FAB para adicionar nota
                     containerColor = Color(0xFF2F2E2E),
                     contentColor = Color.White,
                     shape = RoundedCornerShape(200.dp)
                 ) {
-                    Icon(
+                    Icon(modifier = Modifier.align(Alignment.Center),
                         imageVector = Icons.Default.Add,
                         contentDescription = "Add note", // traduzido para inglês
                     )
@@ -189,7 +181,7 @@ fun screenListContent(
                 .fillMaxSize()
                 .background(color = Color.Black)
                 .padding(paddingValues)
-                .padding(4.dp)
+                .padding(start =6.dp,end=6.dp)
         ) {
             Spacer(Modifier.height(16.dp)) // espaço superior
 
