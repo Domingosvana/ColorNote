@@ -78,6 +78,7 @@
 - UI/UX improvements
 - Reminder notifications
 ---
+---
 
 ## 🤝 Contribution
 Contributions are welcome. 
